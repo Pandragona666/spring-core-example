@@ -41,9 +41,9 @@
         </dependency>
 
         <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <version>${h2db.version}</version>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.15</version>
         </dependency>
 
         <dependency>
@@ -54,7 +54,7 @@
     </dependencies>
 
     <properties>
-        <spring.version>5.1.6.RELEASE</spring.version>
+        <spring.version>5.1.5.RELEASE</spring.version>
         <hibernate.version>5.4.2.Final</hibernate.version>
         <hibernate.validator>5.4.1.Final</hibernate.validator>
         <h2db.version>1.4.197</h2db.version>
