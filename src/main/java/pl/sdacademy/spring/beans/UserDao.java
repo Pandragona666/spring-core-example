@@ -12,10 +12,6 @@ public class UserDao {
 
     private String dbAddress;
 
-    public UserDao(String dbAddress) {
-        this.dbAddress = dbAddress;
-    }
-
     public String getDbAddress() {
         return dbAddress;
     }

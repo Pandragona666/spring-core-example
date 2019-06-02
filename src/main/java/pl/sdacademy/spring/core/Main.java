@@ -4,6 +4,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import pl.sdacademy.spring.beans.RepositoryConfiguration;
 import pl.sdacademy.spring.beans.UserRepository;
+import pl.sdacademy.spring.beans.UserView;
 
 public class Main {
 
@@ -12,9 +13,9 @@ public class Main {
         ApplicationContext context =
                 new AnnotationConfigApplicationContext(RepositoryConfiguration.class);
 
-        UserRepository userRepository = context
-                .getBean(UserRepository.class);
-        System.out.println(userRepository);
+        UserView userView = context
+                .getBean(UserView.class);
+        System.out.println(userView);
 
         ((AnnotationConfigApplicationContext) context).registerShutdownHook();
     }
